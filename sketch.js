@@ -35,11 +35,11 @@ function draw() {
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
-    if (movingSprite.x<0){
+    if (ball.x<0){
      music.stop()
      ball.velocityX=3
     }
-    else if(movingSprite.x>=800){
+    else if(ball.x>=800){
     music.stop()
     ball.velocityX=-3
     }
